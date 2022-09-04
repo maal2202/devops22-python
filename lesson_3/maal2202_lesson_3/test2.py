@@ -23,6 +23,7 @@ tup.sort(key=lambda y: y[1])
 tup.reverse()
 print(f'The oldet person is {max(tup[0])} with a shoe size of {max(tup[0])}')
 
+
 #for item in tup:
 #print(f' The oldest person is {max(tup[0])}')
 
