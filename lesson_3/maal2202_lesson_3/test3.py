@@ -9,16 +9,16 @@ print(result1)
 result2 = x and y and z
 print(result2)
 #3
-result3 = x and z and y or y and z and x or z and y and x
+result3 = x and y and z
 print(result3)
 #4
 result4 = x or y or z
 print(result4)
 #5
-result5 = not x and not y and not z
+result5 = not (x or y or z)
 print(result5)
 #6
-result6 = not x or not y and not z or not x or not y or not z or not y and not x or not x or not y or not y or not x and not z or not x or not z
+result6 = not (x and y and z)
 print(result6)
 
 # 1. Write a expression with Boolean Operations that:
