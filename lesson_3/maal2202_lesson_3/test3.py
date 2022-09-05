@@ -1,7 +1,7 @@
 # Övningsuppgift 3, booleans
-x = True
-y = True
-z = True
+x = False
+y = False
+z = False
 #1
 result1 = x or y or z
 print(result1)
@@ -12,7 +12,7 @@ print(result2)
 result3 = x and z and y or y and z and x or z and y and x
 print(result3)
 #4
-result4 = x or y and z or x or y or z or y and x or x or y or y or x and z or x or z
+result4 = x or y or z
 print(result4)
 #5
 result5 = not x and not y and not z
