@@ -8,7 +8,7 @@ tele = "00468123456789"
 print (f'Firstname: {firstname}, Lastname: {lastname}, Phonenumber: {tele}')
 
 # 2
-fullname = firstname + lastname
+fullname = firstname + str(" ") + lastname
 print(fullname)
 
 # 3
