@@ -25,7 +25,8 @@ print(list77)
 # 4
 list300 = list(range(1,301))
     # 4.1
-print(random.sample(range(list300, k=100))
+random100 = random.sample(list300, 100)
+print(random100)
 
     # 4.2
 list300 = []
@@ -63,3 +64,7 @@ colors3_unique = list(dict.fromkeys(colors3))
 print(f'The lenght of list colors1 is {len(colors1)}, containing the colors {colors1_unique}')
 print(f'The lenght of list colors2 is {len(colors2)}, containing the colors {colors2_unique}')
 print(f'The lenght of list colors3 is {len(colors3)}, containing the colors {colors3_unique}')
+# svar enligt solution exerise 6, ser "finare ut" utan brackets "[]" när listan gör om till set
+print(f'Lengt: {len(colors1)}, colors: {", ".join(set(colors1))}')
+print(f'Lengt: {len(colors2)}, colors: {", ".join(set(colors2))}')
+print(f'Lengt: {len(colors3)}, colors: {", ".join(set(colors3))}')

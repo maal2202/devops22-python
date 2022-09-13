@@ -21,8 +21,7 @@ print(c)
 print(c.most_common(3))
 
     # 4
-print(f'{c.most_common()[:-1-1:-1]}')
-# eller: print(c.most_common()[-1])
+print(f'{c.most_common()[-1]}')
 
     # 5
 names_unique = list(dict.fromkeys(names_random))
@@ -32,7 +31,8 @@ alphabetical = sorted(names_unique)
 print(alphabetical)
 
     # 5.2
-print(random.sample(names_unique, len(names_unique)))
+random.shuffle(names_unique)
+print(names_unique)
 
     # 5.3
 alphabetical.reverse()

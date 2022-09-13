@@ -12,19 +12,18 @@ names = ["adam", "bertil", "cesar", "david", "erik", "filip", "gustav", "helge",
 names50 = []
 for i in range(50):
     names50.append(random.choice(names))
-print(names50)
 
     # 2
 queue = deque([], 10)
 
 for i in range(10):
-    queue.append(random.choice(names))
+    queue.append(random.choice(names50))
 print(queue)
 
     # 3
 rand = random.randint(1, 10)
 while rand > 0:
-    queue.pop()
+    queue.popleft()
     rand-=1
 print(queue)
 
@@ -38,11 +37,11 @@ print(queue)
 
     # 5
 while finish > 10:
-    queue.pop()
+    queue.popleft()
     finish-=1
     queue.append(random.choice(names))
 print(queue)
 while finish > 0:
-    queue.pop()
+    queue.popleft()
     finish-=1
 print(queue)
