@@ -1,6 +1,7 @@
 # Lektion 6 - Övning 1
 
 import random
+from ssl import ALERT_DESCRIPTION_ACCESS_DENIED
 import string
 from operator import mul
 from random import shuffle, choices, sample
@@ -22,14 +23,14 @@ list77 = [x for x in list100[:77] if x % 2 != 0]
 print(list77)
 
 # 4
-list300 = list(range(0,300))
+list300 = list(range(1,301))
     # 4.1
-print(random.sample(range(0,300), 100))
+print(random.sample(range(list300, k=100))
 
     # 4.2
 list300 = []
 for i in range(100):
-    n = random.randint(1,300)
+    n = random.randint(1,301)
     list300.append(n)
 print(list300)
 
@@ -42,11 +43,18 @@ for i in range(2):
     colors2.append(random.choice(colors1))
 print(colors2)
 
+# alternativt:
+# chosen_colors = sample(colors1, k=2)
+# colors2.extend(chosen_colors)
+
     # 5.2
 colors3 = []
 for i in range(50):
     colors3.append(random.choice(colors2))
 print(colors3)
+
+# Alternativt:
+# random_colors = choices(colors3, k=50)
 
     # 5.3
 colors1_unique = list(dict.fromkeys(colors1))

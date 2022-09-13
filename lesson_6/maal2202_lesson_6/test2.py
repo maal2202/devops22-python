@@ -22,6 +22,7 @@ print(c.most_common(3))
 
     # 4
 print(f'{c.most_common()[:-1-1:-1]}')
+# eller: print(c.most_common()[-1])
 
     # 5
 names_unique = list(dict.fromkeys(names_random))
