@@ -14,11 +14,14 @@ print(mytuple(10,5))
 def boolean(x, y):
     return x > y
 print(boolean(2, 4))
+# eller
+def bool():
+    return False
 
     # 4
-def float(x, y):
-    return x / y
-print(float(100, 3))
+def float():
+    return 1.5
+print(float())
 
     # 5
 def fullname(first, last):
@@ -29,3 +32,14 @@ print(f'{fullname("MARTIN", "ALFREDSon")}')
 def rect(x, y):
     return x*y
 print(rect(10,5))
+
+    # 7
+def summa(total):
+    return sum(total)
+print(summa((100, 300, 200)))
+
+    # 8
+def repeat(word, repeat):
+    for r in range(repeat):
+        print(word)
+repeat("Hej", 5)

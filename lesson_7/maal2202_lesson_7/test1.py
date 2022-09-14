@@ -29,8 +29,11 @@ def yell(word):
 yell("hej")
     # 3.4
 def numbers(stop):
-    start = 1
-    while stop != start:
-        print(start)
-        start += 1
+    print(list(range(1, stop)))
+# Tidigare lösning, svar given i solutions använd ovan
+# def numbers(stop):
+#     start = 1
+#     while stop != start:
+#         print(start)
+#         start += 1
 numbers(7)
